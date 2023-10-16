@@ -14,5 +14,5 @@ button.addEventListener('mouseenter', function() {
 });
 function showAlert() {
     alert('Hey you, No cheating!');
-  }
+}
   
