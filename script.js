@@ -1,4 +1,5 @@
 const button = document.querySelector('button');
+const audio = document.getElementById('audio');
 
 button.addEventListener('mouseenter', function() {
   // Generate a random position within the screen bounds
@@ -12,7 +13,21 @@ button.addEventListener('mouseenter', function() {
   button.style.left = randomX + 'px';
   button.style.top = randomY + 'px';
 });
+
 function showAlert() {
-    alert('Hey you, No cheating!');
+  alert('Hey you, No cheating!');
 }
-  
+
+// Add an event listener for the "Enter" key press
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    // Play the audio
+    audio.play();
+    
+    // Prevent the default form submission
+    event.preventDefault();
+    
+    // Show the alert
+    showAlert();
+  }
+});
