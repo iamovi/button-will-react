@@ -8,28 +8,28 @@ body {
     margin: 0;
   }
   
-  h1 {
+h1 {
     text-align: center;
     font-family: Arial;
-  }
+}
   
-  .top-centered-form {
+.top-centered-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .centered-form {
+.centered-form {
     text-align: center;
-  }
+}
   
-  input {
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-  }
+}
   
-  button {
+button {
     background-color: #000;
     color: #fff;
     padding: 10px;
@@ -38,9 +38,14 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
+}
   
-  button:hover {
+button:hover {
     transform: translate(0, -50%);
-  }
+}
   
+@media only screen and (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+}
