@@ -33,7 +33,7 @@ body {
     background-color: #000;
     color: #fff;
     padding: 10px;
-    cursor: pointer;
+    cursor: default;
     position: absolute;
     left: 50%;
     top: 50%;
