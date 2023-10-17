@@ -21,7 +21,8 @@ function showAlert() {
 // Add an event listener for the "Enter" key press
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-    // Play the audio
+    // Reset audio playback to the beginning and play it
+    audio.currentTime = 0;
     audio.play();
     
     // Prevent the default form submission
