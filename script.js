@@ -15,7 +15,7 @@ button.addEventListener('mouseenter', function() {
 });
 
 function showAlert() {
-  alert('Hey you, No cheating!');
+  alert('Hey you, No cheating!😂');
 }
 
 // Add an event listener for the "Enter" key press
