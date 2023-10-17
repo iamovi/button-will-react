@@ -1,5 +1,6 @@
 const button = document.querySelector('button');
-const audio = document.getElementById('audio');
+const audio1 = document.getElementById('audio1');
+const audio2 = document.getElementById('audio2');
 
 button.addEventListener('mouseenter', function() {
   // Generate a random position within the screen bounds
@@ -21,9 +22,16 @@ function showAlert() {
 // Add an event listener for the "Enter" key press
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-    // Reset audio playback to the beginning and play it
-    audio.currentTime = 0;
-    audio.play();
+    // Generate a random number (0 or 1) to choose which audio to play
+    const randomAudioIndex = Math.floor(Math.random() * 2);
+
+    if (randomAudioIndex === 0) {
+      audio1.currentTime = 0;
+      audio1.play();
+    } else {
+      audio2.currentTime = 0;
+      audio2.play();
+    }
     
     // Prevent the default form submission
     event.preventDefault();
