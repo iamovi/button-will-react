@@ -26,7 +26,7 @@ Contributions to this project are welcome! If you have ideas for improvements or
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.txt). You are free to use and modify the code for your own projects, with proper attribution.
+This project is licensed under the [MIT License](LICENSE). You are free to use and modify the code for your own projects, with proper attribution.
 
 ---
 
