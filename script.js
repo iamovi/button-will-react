@@ -1,25 +1,59 @@
-const button = document.querySelector('button');
+const button = document.querySelector('#btn');
 const audio1 = document.getElementById('audio1');
+const margin = 30; // Define the minimum margin
+const segmentSize = 10; // Define the size of segments for collision checking
 
-button.addEventListener('mouseenter', function() {
-  // Generate a random position within the screen bounds
-  const maxX = window.innerWidth - button.offsetWidth;
-  const maxY = window.innerHeight - button.offsetHeight;
+button.addEventListener('mouseenter', moveButton);
 
-  const randomX = Math.random() * maxX;
-  const randomY = Math.random() * maxY;
+function moveButton() {
+  const buttonRect = button.getBoundingClientRect();
+  const buttonWidth = buttonRect.width;
+  const buttonHeight = buttonRect.height;
+
+  // Calculate the maximum allowed position
+  const maxX = window.innerWidth - buttonWidth - 2 * margin;
+  const maxY = window.innerHeight - buttonHeight - 2 * margin;
+
+  let randomX, randomY;
+
+  do {
+    randomX = Math.random() * maxX + margin;
+    randomY = Math.random() * maxY + margin;
+  } while (isColliding(randomX, randomY, buttonWidth, buttonHeight));
 
   // Set the button's new position
   button.style.left = randomX + 'px';
   button.style.top = randomY + 'px';
-});
+}
+
+function isColliding(x, y, width, height) {
+  const numSegmentsX = Math.floor(width / segmentSize);
+  const numSegmentsY = Math.floor(height / segmentSize);
+
+  for (let i = 0; i <= numSegmentsX; i++) {
+    for (let j = 0; j <= numSegmentsY; j++) {
+      const offsetX = i * segmentSize;
+      const offsetY = j * segmentSize;
+
+      const elements = document.elementsFromPoint(x + offsetX, y + offsetY);
+
+      for (const element of elements) {
+        if (element !== button && !element.contains(button)) {
+          return true;
+        }
+      }
+    }
+  }
+
+  return false;
+}
 
 function showAlert() {
   alert('You must click the button!😂');
 }
 
 // Add an event listener for the "Enter" key press
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
     audio1.currentTime = 0;
     audio1.play();
