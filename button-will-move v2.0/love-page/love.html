@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked you</title>
+    <link rel="icon" href="../apple.png">
+
+
+    <!--styles-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+        html, body {
+            transition: 0.3s all ease;
+
+            background: url(./main-bg-love.gif) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            font-family: 'Jockey One', sans-serif;
+        }
+
+
+
+
+
+
+
+
+
+    /* Animation for the typing and erasing text */
+    .typing-text {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        border-right: .15em solid orange;
+        letter-spacing: .15em;
+        animation: type-erase 2.5s steps(40, end) infinite;
+
+        color: white;
+        font-size: 40px;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    /* Keyframes for typing and erasing */
+    @keyframes type-erase {
+        0%, 100% { width: 0; border-right: .15em solid transparent; }
+        50% { width: 40%; border-right: .15em solid orange; }
+    }
+
+
+    
+    @media only screen and (max-width: 620px) {
+        html, body {
+            background: url(./mb-bg-love.gif) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        @keyframes type-erase {
+            0%, 100% { width: 0; border-right: .15em solid transparent; }
+            50% { width: 90%; border-right: .15em solid orange; }
+        }
+
+        .typing-text {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 5px;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <!--muaaaaaaahhhhhhh-->
+    <h3 class="typing-text">You are mine...❤</h3>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start the initial animation
+            const typingText = document.querySelector('.typing-text');
+            typingText.classList.add('typing');
+        });
+    </script>
+    
+    
+</body>
+</html>

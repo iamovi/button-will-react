@@ -31,11 +31,13 @@ input {
 
 button {
   background-color: #000;
+  width: 85px;
+  border-radius: 5px;
   color: #fff;
   padding: 10px;
   cursor: default;
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 50%;
 }
 
@@ -43,8 +45,37 @@ button:hover {
   transform: rotate(20deg); 
 }
 
-@media only screen and (max-width: 600px) {
-input {
-  width: 90%;
+/*v2.0*/
+@keyframes borderAnimation {
+  0% {
+    border-top: 0.5px solid transparent;
+    border-left: 0.5px solid transparent;
+  }
+  100% {
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black;
+  }
 }
+
+.v2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: red;
+  text-decoration: none;
+  
+  animation-name: borderAnimation;
+  animation-duration: 2s; /* adjust this to change the speed of the animation */
+  animation-iteration-count: infinite; /* the animation will repeat indefinitely */
+}
+
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+  button {
+    left: 42%;
+  }
 }
