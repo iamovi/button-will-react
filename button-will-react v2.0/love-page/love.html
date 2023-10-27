@@ -9,21 +9,27 @@
 
     <!--styles-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
         html, body {
             transition: 0.3s all ease;
-
-            background: url(./main-bg-love.gif) no-repeat center center fixed;
+            background: url(./main-bg-love.png) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
 
-            font-family: 'Jockey One', sans-serif;
+            font-family: 'Caveat', cursive;
         }
 
 
+        img {
+            width: 35%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            opacity: 0.8;
+        }
 
 
 
@@ -40,7 +46,7 @@
         letter-spacing: .15em;
         animation: type-erase 2.5s steps(40, end) infinite;
 
-        color: white;
+        color: black;
         font-size: 40px;
 
         position: fixed;
@@ -52,7 +58,7 @@
     /* Keyframes for typing and erasing */
     @keyframes type-erase {
         0%, 100% { width: 0; border-right: .15em solid transparent; }
-        50% { width: 40%; border-right: .15em solid orange; }
+        50% { width: 50%; border-right: .10em solid orange; }
     }
 
 
@@ -65,12 +71,17 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        img {
+            width: 70%;
+            opacity: 1;
+        }
         @keyframes type-erase {
             0%, 100% { width: 0; border-right: .15em solid transparent; }
             50% { width: 90%; border-right: .15em solid orange; }
         }
 
         .typing-text {
+            font-size: 27px;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -82,7 +93,12 @@
 </head>
 <body>
     <!--muaaaaaaahhhhhhh-->
-    <h3 class="typing-text">You are mine...❤</h3>
+
+    <img src="./rickkbro.gif" alt="rick Bro">
+
+
+
+    <h3 class="typing-text">YOU GOT RICK ROLLED!😂</h3>
 
 
 
