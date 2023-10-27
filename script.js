@@ -4,7 +4,6 @@ const margin = 30; // Define the minimum margin
 const segmentSize = 10; // Define the size of segments for collision checking
 
 button.addEventListener('mouseenter', moveButton);
-button.addEventListener('click', moveButton); // Use 'click' event for mobile
 
 function moveButton() {
   const buttonRect = button.getBoundingClientRect();
@@ -49,9 +48,30 @@ function isColliding(x, y, width, height) {
   return false;
 }
 
-// Prevent the default form submission for Enter key press
+function showAlert() {
+  alert('You must click the button!😂');
+}
+
+// Check if the device is a mobile device
+const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// Add an event listener for the "Enter" key press
 document.addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
+  if (event.key === 'Enter' && !isMobileDevice) {
+    audio1.currentTime = 0;
+    audio1.play();
+
+    // Prevent the default form submission
     event.preventDefault();
+
+    // Show the alert, but only on non-mobile devices
+    showAlert();
   }
 });
+
+// Add a tap/touch event listener for mobile devices
+if (isMobileDevice) {
+  button.addEventListener('click', function () {
+    moveButton();
+  });
+}

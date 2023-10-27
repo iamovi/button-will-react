@@ -31,13 +31,12 @@ input {
 
 button {
   background-color: #000;
-  width: 85px;
   border-radius: 5px;
   color: #fff;
-  padding: 10px;
+  padding: 11px;
   cursor: default;
   position: absolute;
-  left: 48%;
+  right: 47%;
   top: 50%;
 }
 
@@ -76,7 +75,7 @@ button:hover {
     width: 90%;
   }
   button {
-    left: 42%;
+    right: 43%;
   }
   button:hover {
     transform: none;
