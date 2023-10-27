@@ -1,29 +1,10 @@
 const button = document.querySelector('#btn');
 const yesButton = document.querySelector('#yesBtn'); // Reference the "Yes" button
+const noButton = document.querySelector('#noBtn'); // Reference the "No" button
 const margin = 30; // Define the minimum margin
 
-button.addEventListener('mouseenter', function () {
-  moveButton(); // Move the button to a random position
-  changeBackgroundColor(); // Change the button's background color
-});
-
-button.addEventListener('mouseleave', function () {
-  changeBackgroundColor(); // Change the button's background color when the cursor leaves
-});
-
-yesButton.addEventListener('click', function () {
-  showAlertAndRedirect(); // Show the alert and redirect when "Yes" is clicked
-  yesButton.disabled = true; // Disable the "Yes" button
-});
-
-yesButton.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    e.preventDefault(); // Prevent "Enter" key from activating the button
-  }
-});
-
-function moveButton() {
-  const buttonRect = button.getBoundingClientRect();
+function moveButton(buttonElement) {
+  const buttonRect = buttonElement.getBoundingClientRect();
   const buttonWidth = buttonRect.width;
   const buttonHeight = buttonRect.height;
 
@@ -39,8 +20,10 @@ function moveButton() {
   } while (isColliding(randomX, randomY, buttonWidth, buttonHeight));
 
   // Set the button's new position
-  button.style.left = randomX + 'px';
-  button.style.top = randomY + 'px';
+  buttonElement.style.left = randomX + 'px';
+  buttonElement.style.top = randomY + 'px';
+
+  changeBackgroundColor(buttonElement); // Change the button's background color
 }
 
 function isColliding(x, y, width, height) {
@@ -55,12 +38,12 @@ function isColliding(x, y, width, height) {
   return false;
 }
 
-function changeBackgroundColor() {
+function changeBackgroundColor(buttonElement) {
   const randomColor = getRandomColor();
-  button.style.backgroundColor = randomColor;
+  buttonElement.style.backgroundColor = randomColor;
 
   const brightness = getBrightness(randomColor);
-  button.style.color = brightness > 128 ? 'black' : 'white';
+  buttonElement.style.color = brightness > 128 ? 'black' : 'white';
 }
 
 function getBrightness(hexColor) {
@@ -82,5 +65,27 @@ function getRandomColor() {
 
 function showAlertAndRedirect() {
   alert('I LOVE YOU BABE!💖');
-  window.location.href = './love-page/love.html'; 
+  window.location.href = './love-page/love.html';
 }
+
+// Event listeners
+button.addEventListener('mouseenter', () => moveButton(button)); // For desktop
+button.addEventListener('click', () => moveButton(button)); // For mobile
+
+yesButton.addEventListener('click', function () {
+  showAlertAndRedirect();
+  yesButton.disabled = true;
+});
+
+yesButton.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+  }
+});
+
+noButton.addEventListener('click', () => moveButton(noButton)); // Move "No" button
+noButton.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+  }
+});

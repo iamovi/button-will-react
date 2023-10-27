@@ -67,7 +67,36 @@ img {
   
 #btn:hover {
     transform: rotate(25deg); 
+}
+
+
+/*v1.0*/
+@keyframes borderAnimation {
+  0% {
+    border-top: 0.5px solid transparent;
+    border-left: 0.5px solid transparent;
   }
+  100% {
+    border-top: 0.5px solid black;
+    border-right: 0.5px solid black;
+  }
+}
+
+.v1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  
+  animation-name: borderAnimation;
+  animation-duration: 2s; /* adjust this to change the speed of the animation */
+  animation-iteration-count: infinite; /* the animation will repeat indefinitely */
+}
+
+
+
   
 @media only screen and (max-width: 720px) {
   img {
