@@ -95,14 +95,15 @@
     <!--muaaaaaaahhhhhhh-->
 
     <img src="./rickkbro.gif" alt="rick Bro">
-    <h3 class="typing-text">YOU GOT RICK ROLLED!😂</h3>
+    <h3 class="typing-text" style="display: none;">YOU GOT RICK ROLLED!😂</h3>
+    
     
     <script>
-
         // Wait for all assets to load
         window.onload = function() {
             // Start the initial animation
             const typingText = document.querySelector('.typing-text');
+            typingText.style.display = 'block';
             typingText.classList.add('typing');
         };
     </script>
