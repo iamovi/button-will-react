@@ -3,6 +3,7 @@ const audio1 = document.getElementById('audio1');
 const margin = 30; // Define the minimum margin
 const segmentSize = 10; // Define the size of segments for collision checking
 
+button.addEventListener('mouseenter', moveButton);
 button.addEventListener('click', moveButton); // Use 'click' event for mobile
 
 function moveButton() {

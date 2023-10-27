@@ -78,4 +78,7 @@ button:hover {
   button {
     left: 42%;
   }
+  button:hover {
+    transform: none;
+  }
 }
