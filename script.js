@@ -49,7 +49,12 @@ function isColliding(x, y, width, height) {
 }
 
 function showAlert() {
-  alert('You must click the button!😂');
+  // Check if the device is a mobile device
+  const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+  if (!isMobileDevice) {
+    alert('You must click the button!😂');
+  }
 }
 
 // Check if the device is a mobile device
