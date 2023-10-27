@@ -3,7 +3,7 @@ const audio1 = document.getElementById('audio1');
 const margin = 30; // Define the minimum margin
 const segmentSize = 10; // Define the size of segments for collision checking
 
-button.addEventListener('mouseenter', moveButton);
+button.addEventListener('click', moveButton); // Use 'click' event for mobile
 
 function moveButton() {
   const buttonRect = button.getBoundingClientRect();
@@ -48,20 +48,9 @@ function isColliding(x, y, width, height) {
   return false;
 }
 
-function showAlert() {
-  alert('You must click the button!😂');
-}
-
-// Add an event listener for the "Enter" key press
+// Prevent the default form submission for Enter key press
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
-    audio1.currentTime = 0;
-    audio1.play();
-
-    // Prevent the default form submission
     event.preventDefault();
-
-    // Show the alert
-    showAlert();
   }
 });
