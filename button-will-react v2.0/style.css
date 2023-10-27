@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
 html, body { 
-  transition: 1s all ease;
-
   background: url(./main-bg.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
