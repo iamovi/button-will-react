@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  transform: rotate(20deg); 
+  transform: rotate(15deg); 
 }
 
 /*v2.0*/
