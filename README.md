@@ -1,4 +1,4 @@
-# Moving Sign-In Button (Prank Project)
+# button will React! (Prank Project)
 
 Welcome to the "Moving Sign-In Button" project, a harmless prank meant for fun and entertainment!
 
@@ -19,6 +19,13 @@ This project is entirely safe and contains no malicious content. It's designed f
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 3. Hover over the "Sign In" button to see it move away playfully.
+
+# v2.0 propose project
+
+Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
+
+![Preview v2.0 project-propose](./v2.0%20project-propose/preview-propose.png)
+- the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
 
 ## Contributions
 
