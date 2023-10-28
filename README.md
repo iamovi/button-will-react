@@ -19,6 +19,7 @@ This project is entirely safe and contains no malicious content. It's designed f
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 3. Hover over the "Sign In" button to see it move away playfully.
+![Preview project](./preview-project.png)
 
 # v2.0 propose project
 
