@@ -65,7 +65,7 @@ function getRandomColor() {
 
 function showAlertAndRedirect() {
   alert('I LOVE YOU BABE!💖');
-  window.location.href = './love-page/love.html';
+  window.location.href = './love-page/hehe.html';
 } 
 /************************ 👀hey, if you really want to propose Her... 
 then just change -
