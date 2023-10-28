@@ -4,17 +4,23 @@ Welcome to the "button-will-react" project, a harmless prank meant for fun and e
 
 ## Description
 
-This project features a sign-in button that playfully moves away from your cursor when you hover over it. It's a lighthearted experiment to showcase a simple interactive element using HTML, CSS, and JavaScript.
+This project features a sign-in button that playfully moves away from your cursor when you hover over it. It's a lighthearted experiment to showcase a interactive element using HTML, CSS, and JavaScript.
+
+And v2.0 (version2.0) propose project also features two button "Yes" and "No". That no button playfully moves away as well.
+This project also features an awesome interface.
 
 ## Usage
 
 To experience the prank, simply open the project in your browser, move your cursor over the "Sign In" button, and watch it react.
 
+Same with the v2.0 project-propose.
+
 ## Preview & How to Run
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
-3. Hover over the "Sign In" button to see it move away playfully.
+1. Clone this repository to your local machine or download code as zip.
+2. Open the `index.html` file in your web browser or open the `index.html` from v2.0 project-propose.
+3. Hover over the "Sign In" button to see it move away playfully. And hover "No" button to see it move away as well.
+- YOU'RE GONNA LOVE THIS!
 
 ![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
 
