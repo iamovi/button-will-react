@@ -19,14 +19,18 @@ This project is entirely safe and contains no malicious content. It's designed f
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 3. Hover over the "Sign In" button to see it move away playfully.
+
 ![Preview project](./preview-project.png)
 
 # v2.0 propose project
 
 Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
 
-![Preview v2.0 project-propose](./v2.0%20project-propose/preview-propose.png)
+![Preview v2.0 project-propose](./v2.0%20project-propose/preview-projectv2.png)
 - the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
+
+# Live Demo > [Click here](https://button-will-react.netlify.app)
+
 
 ## Contributions
 
@@ -38,6 +42,4 @@ This project is licensed under the [MIT License](LICENSE). You are free to use a
 
 ---
 
-Enjoy the prank and have some fun with the moving sign-in button! If you encounter any issues or have questions, please feel free to reach out.
-
-### Preview > [Click here](https://button-will-react.netlify.app)
+Enjoy the prank and have some fun with the moving sign-in button! If you encounter any issues or have questions, please feel free to reach out 💖.
