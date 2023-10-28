@@ -1,4 +1,4 @@
-# button will React! (Prank Project)
+# button-will-react! (Prank Project)
 
 Welcome to the "Moving Sign-In Button" project, a harmless prank meant for fun and entertainment!
 
@@ -10,11 +10,7 @@ This project features a sign-in button that playfully moves away from your curso
 
 To experience the prank, simply open the project in your browser, move your cursor over the "Sign In" button, and watch it react.
 
-## Security Note
-
-This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about basic web development techniques.
-
-## How to Run
+## Preview & How to Run
 
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
@@ -22,7 +18,7 @@ This project is entirely safe and contains no malicious content. It's designed f
 
 ![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
 
-# v2.0 propose project
+# v2.0 propose-project
 
 Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
 
@@ -31,6 +27,10 @@ Similar reactive button project for proposing or impressing your loved one in a 
 
 # Live Demo > [Click here](https://button-will-react.netlify.app)
 
+
+## Security Note
+
+This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about basic web development techniques.
 
 ## Contributions
 
