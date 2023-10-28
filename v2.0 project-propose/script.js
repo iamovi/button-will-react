@@ -66,7 +66,16 @@ function getRandomColor() {
 function showAlertAndRedirect() {
   alert('I LOVE YOU BABE!💖');
   window.location.href = './love-page/love.html';
-}
+} 
+/************************ 👀hey, if you really want to propose Her... 
+then just change -
+         
+                  ./love-page/hehe.html to ./love-page/love.html                  
+
+and you are ready to propose Her!😁
+
+- see README.txt file on love-page folder for more information!!!
+************************/
 
 // Event listeners
 button.addEventListener('mouseenter', () => moveButton(button)); // For desktop
