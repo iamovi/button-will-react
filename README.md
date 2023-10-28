@@ -42,4 +42,4 @@ This project is licensed under the [MIT License](LICENSE). You are free to use a
 
 ---
 
-Enjoy the prank and have some fun with the moving sign-in button! If you encounter any issues or have questions, please feel free to reach out 💖.
+Enjoy the prank and have some fun with the Project! If you encounter any issues or have questions, please feel free to reach out 💖.
