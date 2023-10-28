@@ -22,7 +22,7 @@ To experience the prank, simply open the project in your browser, move your curs
 
 Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
 
-![Preview v2.0 project-propose](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/preview-projectv2.png)
+![Preview v2.0 project-propose](https://github.com/iamovi/button-will-react/blob/main/preview-projectv2.png)
 - the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
 
 # Live Demo > [Click here](https://button-will-react.netlify.app)
