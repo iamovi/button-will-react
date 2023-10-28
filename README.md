@@ -20,13 +20,13 @@ This project is entirely safe and contains no malicious content. It's designed f
 2. Open the `index.html` file in your web browser.
 3. Hover over the "Sign In" button to see it move away playfully.
 
-![Preview project](./preview-project.png)
+![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
 
 # v2.0 propose project
 
 Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
 
-![Preview v2.0 project-propose](./v2.0%20project-propose/preview-projectv2.png)
+![Preview v2.0 project-propose](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/preview-projectv2.png)
 - the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
 
 # Live Demo > [Click here](https://button-will-react.netlify.app)
