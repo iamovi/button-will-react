@@ -1,6 +1,6 @@
 # button-will-react! (Prank Project)
 
-Welcome to the "Moving Sign-In Button" project, a harmless prank meant for fun and entertainment!
+Welcome to the "button-will-react" project, a harmless prank meant for fun and entertainment!
 
 ## Description
 
