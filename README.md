@@ -36,7 +36,7 @@ Similar reactive button project for proposing or impressing your loved one in a 
 
 ## Security Note
 
-This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about basic web development techniques.
+This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about web development techniques.
 
 ## Contributions
 
