@@ -24,7 +24,7 @@ Same with the v2.0 project-propose.
 
 ![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
 
-# v2.0 propose-project
+# v2.0 project-propose
 
 Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
 
