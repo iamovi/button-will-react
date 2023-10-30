@@ -32,7 +32,7 @@ Similar reactive button project for proposing or impressing your loved one in a 
 
 ![Preview v2.0 project-propose](https://github.com/iamovi/button-will-react/blob/main/preview-projectv2.png)
 - the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
-- Check [README.txt](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/love-page/README.txt) for more information. <span style="color: blue;">(important)</span>
+- Check [README.txt](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/love-page/README.txt) for more information! (important)
 
 # Live Demo > [Click here](https://button-will-react.netlify.app)
 
