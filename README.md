@@ -20,7 +20,6 @@ Same with the v2.0 project-propose.
 1. Clone this repository to your local machine or download code as zip.
 2. Open the `index.html` file in your web browser or open the `index.html` from v2.0 project-propose.
 3. Hover over the "Sign In" button to see it move away playfully. And hover "No" button to see it move away as well.
-- YOU'RE GONNA LOVE THIS!
 
 ![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
 
@@ -35,7 +34,7 @@ Similar reactive button project for proposing or impressing your loved one in a 
 - Check [README.txt](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/love-page/README.txt) for more information! (important)
 
 # Live Demo > [Click here](https://button-will-react.netlify.app)
-
+- YOU'RE GONNA LOVE THIS!
 
 ## Security Note
 
