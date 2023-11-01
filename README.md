@@ -13,7 +13,7 @@ This project also features an awesome interface.
 
 To experience the prank, simply open the project in your browser, move your cursor over the "Sign In" button, and watch it react.
 
-Same with the v2.0 project-propose.
+Same with the v2.0 project-propose, with more features.
 
 ## Preview & How to Run
 
