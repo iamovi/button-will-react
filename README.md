@@ -13,7 +13,7 @@ This project features a button that playfully moves away from your cursor when y
 ![1-sign-in](./assets/banner/1-signin.gif)
 - a untouchable sign-in button, even enter not gonna work , it will throw an alert.
 
-Live preview - []()
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/1-signin/)
 
 **2. Propose**
 
@@ -21,14 +21,14 @@ Live preview - []()
 - a untouchable no button, your partner have to choose yes.
 - read README.txt from 2-propose folder for more details and improve it.
 
-Live preview - []()
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/2-propose/)
 
 **3. Valentine**
 
 ![3-valentine](./assets/banner/3-valentine.gif)
 - a fun way to propose your partner on 14th feb.
 
-Live preview - []()
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/3-valentine/)
 
 ## Security Note
 
