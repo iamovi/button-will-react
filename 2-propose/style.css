@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+html, body { 
+  background: url(./main-bg.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  animation: gradientAnimation 10s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+img {
+  opacity: 0.9;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+
+}
+
+.btn {
+  font-family: 'Jockey One', sans-serif;
+  width: 70px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: pink;
+  color: black;
+  padding: 10px;
+  cursor: default;
+  position: absolute;
+  left: 40%;
+  top: 80%;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+  
+#btn {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: bold;
+    width: 50px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    cursor: default;
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    border-radius: 3px;
+}
+  
+#btn:hover {
+    transform: rotate(20deg); 
+}
+  
+@media only screen and (max-width: 720px) {
+  img {
+    width: 70%;
+  }
+  .btn {
+    left: 30%;
+    top: 80%;
+  }
+  #btn {
+    left: 60%;
+    top: 80%;
+  }
+  #btn:hover {
+    transform: none; 
+}
+}

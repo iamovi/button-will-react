@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top of the screen */
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial;
+}
+
+.top-centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-form {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #000;
+  width: 71px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 11px;
+  cursor: default;
+  position: absolute;
+  right: 47%;
+  top: 50%;
+}
+
+button:hover {
+  transform: translateX(5px); 
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+  button {
+    right: 43%;
+  }
+  button:hover {
+    transform: none;
+  }
+}

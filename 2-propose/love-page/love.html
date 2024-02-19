@@ -1,0 +1,92 @@
+<!-- if you really want to propose her then you need this html file
+    check README.txt file on love-page folder for more details!
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- (: made with love by OVi :) -->
+    <title>Locked You</title>
+    <link rel="icon" href="./love.ico">
+
+    <!--styles-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+        html, body {
+            transition: 0.3s all ease;
+            background: url(./you-me.gif) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            font-family: 'Caveat', cursive;
+        }
+
+
+    /* Animation for the typing and erasing text */
+    .typing-text {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        border-right: .15em solid orange;
+        letter-spacing: .15em;
+        animation: type-erase 2.5s steps(40, end) infinite;
+
+        color: white;
+        font-size: 40px;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    /* Keyframes for typing and erasing */
+    @keyframes type-erase {
+        0%, 100% { width: 0; border-right: .15em solid transparent; }
+        50% { width: 50%; border-right: .10em solid orange; }
+    }
+
+
+    
+    @media only screen and (max-width: 620px) {
+
+        @keyframes type-erase {
+            0%, 100% { width: 0; border-right: .15em solid transparent; }
+            50% { width: 90%; border-right: .15em solid orange; }
+        }
+
+        .typing-text {
+            font-size: 21px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 5px;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <!--muaaaaaaahhhhhhh-->
+
+    <h3 class="typing-text" style="display: none;">YOU ARE MINE...❤</h3>
+    <!--html code ends-->
+    
+    <!--scripts-->
+    <script>
+        // Wait for all assets to load
+        window.onload = function() {
+            // Start the initial animation
+            const typingText = document.querySelector('.typing-text');
+            typingText.style.display = 'block';
+            typingText.classList.add('typing');
+        };
+    </script>
+    
+    
+</body>
+</html>

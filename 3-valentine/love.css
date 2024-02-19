@@ -1,0 +1,42 @@
+* {
+    font-family: "Kode Mono", monospace;
+    user-select: none;
+}
+body {
+    background-color: black;
+}
+
+.pro {
+    display: block;
+    margin: auto;
+    width: 45%;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* love.css */
+
+#yesButton {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    background-color: green;
+  }
+  
+.hidden {
+    color: white;
+    text-align: center;
+    display: none;
+  }
+  

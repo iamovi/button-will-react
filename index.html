@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>What a Form</title>
-  <link rel="stylesheet" href="style.css"> <!--css file-->
-<!-- (: made with love by OVi :) -->
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button-will-react</title>
+
+    <!-- g font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <!-- bs cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .accordion-button:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        </style>
+        
+
 </head>
+
 <body>
-  <div class="top-centered-form" style="margin-top: 120px;">
-    <h1>Sign in if you can! </h1>
 
-    <form action="#" onsubmit="return false;">
-        <div class="centered-form">
-          <input type="email" name="email" placeholder="Email">
-          <input type="password" name="password" placeholder="Password">
-          <button id="btn" type="submit" onclick="showAlert()">Sign In</button>
-        </div>
-      </form>
-      
-  </div>
+    <div class="container">
+        <h2 class="text-center mt-4">Welcome to Project > button-will-react</h2>
+        <br>
+        <p class="text-center">This project features a button that playfully moves away from your cursor when you hover over it, or do something that you didn't expect. It's a lighthearted experiment to showcase a interactive element using HTML, CSS, and JavaScript.</p>
 
-  <audio id="audio1" src="./yamete.mp3"></audio>
-  <!-- this audio will play while pressing enter -->
-  
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Project 01 - moving_sign-in_button.
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src=".github/banner/1-signin.gif" alt="" class="img-fluid">
+                  - a untouchable sign-in button, even enter not gonna work , it will throw an alert.
+                  <br><br>
+                  <h3>/ code on gh Repo folder - <a href="abcd">sdas</a></h3>
+                  <h3>/ Live preview - <a href=""></a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Project 02 - Propose.
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <img src=".github/banner/2-propose.gif" alt="" class="img-fluid">
+                    - a untouchable no button, your partner have to choose yes.
+                    <br><br>
+                    <h3>/ code on gh Repo folder - <a href="abcd">sdas</a></h3>
+                    <h3>/ Live preview - <a href=""></a></h3>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <img src=".github/banner/3-valentine.gif" alt="" class="img-fluid">
+                    - a fun way to propose your partner on 14th feb.
+                    <br><br>
+                    <h3>/ code on gh Repo folder - <a href="abcd">sdas</a></h3>
+                    <h3>/ Live preview - <a href=""></a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
 
 
-  <!-- link for project v2.0 -->
-  <a href="./v2.0 project-propose/index.html" class="v2">v2.0 project-propose</a>
 
-  <script src="script.js"></script> <!--js file-->
-  
-<!-- (: have a nice day :) -->
+
+    <!-- bs cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

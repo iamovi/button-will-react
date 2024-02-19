@@ -4,37 +4,31 @@ Welcome to the "button-will-react" project, a harmless prank meant for fun and e
 
 ## Description
 
-This project features a sign-in button that playfully moves away from your cursor when you hover over it. It's a lighthearted experiment to showcase a interactive element using HTML, CSS, and JavaScript.
+This project features a button that playfully moves away from your cursor when you hover over it, or do something that you didn't expect. It's a lighthearted experiment to showcase a interactive element using HTML, CSS, and JavaScript.
 
-And v2.0 (version2.0) project-propose also features two button "Yes" and "No". That no button playfully moves away as well.
-This project also features an awesome interface.
+## Project Info
 
-## Usage
+**1. Sign-in button**
 
-To experience the prank, simply open the project in your browser, move your cursor over the "Sign In" button, and watch it react.
+![1-sign-in](.github/banner/1-signin.gif)
+- a untouchable sign-in button, even enter not gonna work , it will throw an alert.
 
-Same with the v2.0 project-propose, with more features.
+Live preview - []()
 
-## Preview & How to Run
+**2. Propose**
 
-1. Clone this repository to your local machine or download code as zip.
-2. Open the `index.html` file in your web browser or open the `index.html` from v2.0 project-propose.
-3. Hover over the "Sign In" button to see it move away playfully. And hover "No" button to see it move away as well.
+![2-propose](.github/banner/2-propose.gif)
+- a untouchable no button, your partner have to choose yes.
+- read README.txt from 2-propose folder for more details and improve it.
 
-![Preview project](https://github.com/iamovi/button-will-react/blob/main/preview-project.png)
+Live preview - []()
 
----
+**3. Valentine**
 
-# v2.0 project-propose
+![3-valentine](.github/banner/3-valentine.gif)
+- a fun way to propose your partner on 14th feb.
 
-Similar reactive button project for proposing or impressing your loved one in a funny way. Totally harmless. Can be used for fun.
-
-![Preview v2.0 project-propose](https://github.com/iamovi/button-will-react/blob/main/preview-projectv2.png)
-- the 'No' button will move away when cursor try to touch it, So the only way is to click on the 'Yes' button. Hehe.
-- Check [README.txt](https://github.com/iamovi/button-will-react/blob/main/v2.0%20project-propose/love-page/README.txt) for more information! `(important)`
-
-# Live Demo > [Click here](https://button-will-react.netlify.app)
-- YOU'RE GONNA LOVE THIS!
+Live preview - []()
 
 ## Security Note
 
