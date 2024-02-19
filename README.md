@@ -10,14 +10,14 @@ This project features a button that playfully moves away from your cursor when y
 
 **1. Sign-in button**
 
-![1-sign-in](.github/banner/1-signin.gif)
+![1-sign-in](./assets/banner/1-signin.gif)
 - a untouchable sign-in button, even enter not gonna work , it will throw an alert.
 
 Live preview - []()
 
 **2. Propose**
 
-![2-propose](.github/banner/2-propose.gif)
+![2-propose](./assets/banner/2-propose.gif)
 - a untouchable no button, your partner have to choose yes.
 - read README.txt from 2-propose folder for more details and improve it.
 
@@ -25,7 +25,7 @@ Live preview - []()
 
 **3. Valentine**
 
-![3-valentine](.github/banner/3-valentine.gif)
+![3-valentine](./assets/banner/3-valentine.gif)
 - a fun way to propose your partner on 14th feb.
 
 Live preview - []()
