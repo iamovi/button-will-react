@@ -1,6 +1,6 @@
 // script.js
 
-const button = document.querySelector('#btn');
+const button = document.querySelector('.button_will_react');
 const margin = 30; // Define the minimum margin
 const segmentSize = 10; // Define the size of segments for collision checking
 

@@ -8,3 +8,9 @@ cdn -
 ```
 https://cdn.jsdelivr.net/gh/iamovi/button-will-react@cdn/dist/min/move.min.js
 ```
+
+button -
+```
+<button class="button_will_react">Click Me!</button>
+```
+- just add the class to your any button and done.
