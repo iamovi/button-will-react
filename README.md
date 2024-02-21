@@ -6,7 +6,7 @@
 
 cdn -
 ```
-https://cdn.jsdelivr.net/gh/iamovi/button-will-react@cdn/dist/min/move.min.js
+https://cdn.jsdelivr.net/gh/iamovi/button-will-react@cdn/dist/min/v1.0.0/move.min.js
 ```
 
 button -
