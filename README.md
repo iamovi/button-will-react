@@ -30,6 +30,23 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/2-propose/
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/3-valentine/)
 
+## button-will-react with CDN
+
+You can also use funny moving effect to your any custom button, Just follow few steps below -
+
+```javascript
+<script src="https://cdn.jsdelivr.net/gh/iamovi/button-will-react@cdn/dist/min/v1.0.0/move.min.js"></script>
+```
+- add this cdn to your project file.
+
+And -
+```html
+<button class="button_will_react">Click Me!</button>
+```
+- just add class `button_will_react` to your button.
+
+> That's it.
+
 ## Security Note
 
 This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about web development techniques.
