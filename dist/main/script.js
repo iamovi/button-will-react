@@ -1,34 +1,51 @@
+// script.js
+
 const button = document.querySelector('#btn');
-const audio1 = document.getElementById('audio1');
 const margin = 30; // Define the minimum margin
 const segmentSize = 10; // Define the size of segments for collision checking
 
 button.addEventListener('mouseenter', moveButton);
+button.addEventListener('click', moveButton); // Also move on click
 
 function moveButton() {
   const buttonRect = button.getBoundingClientRect();
   const buttonWidth = buttonRect.width;
   const buttonHeight = buttonRect.height;
+  const buttonPadding = 10; // Adjust this based on your CSS
+  const buttonMargin = 10; // Adjust this based on your CSS
 
-  // Calculate the maximum allowed position
-  const maxX = window.innerWidth - buttonWidth - 2 * margin;
-  const maxY = window.innerHeight - buttonHeight - 2 * margin;
+  // Calculate the maximum allowed position for X
+  let maxX = window.innerWidth - buttonWidth - buttonRect.left - buttonPadding - buttonMargin;
+  maxX = Math.max(maxX, 0); // Ensure maxX is non-negative
+
+  // Adjust this calculation for the leftmost position
+  let leftmostX = buttonRect.left + buttonPadding + buttonMargin;
+  maxX = Math.min(maxX, leftmostX);
+
+  // Calculate the maximum allowed position for Y
+  let maxY = window.innerHeight - buttonHeight - buttonRect.top - buttonPadding - buttonMargin;
+  maxY = Math.max(maxY, 0); // Ensure maxY is non-negative
 
   let randomX, randomY;
 
-  do {
-    randomX = Math.random() * maxX + margin;
-    randomY = Math.random() * maxY + margin;
-  } while (isColliding(randomX, randomY, buttonWidth, buttonHeight));
+  // Fade out animation
+  button.style.opacity = 0;
 
-  // Set the button's new position
-  button.style.left = randomX + 'px';
-  button.style.top = randomY + 'px';
+  setTimeout(() => {
+    do {
+      randomX = Math.random() * maxX + margin;
+      randomY = Math.random() * maxY + margin;
+    } while (isColliding(randomX, randomY, buttonWidth, buttonHeight, buttonPadding, buttonMargin));
+
+    // Set the button's new position using 'style.transform' to translate
+    button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    button.style.opacity = 1; // Fade in animation
+  }, 200); // Adjust the duration of the fade-out before repositioning (in milliseconds)
 }
 
-function isColliding(x, y, width, height) {
-  const numSegmentsX = Math.floor(width / segmentSize);
-  const numSegmentsY = Math.floor(height / segmentSize);
+function isColliding(x, y, width, height, padding, margin) {
+  const numSegmentsX = Math.floor((width + 2 * padding) / segmentSize);
+  const numSegmentsY = Math.floor((height + 2 * padding + 2 * margin) / segmentSize);
 
   for (let i = 0; i <= numSegmentsX; i++) {
     for (let j = 0; j <= numSegmentsY; j++) {
@@ -46,37 +63,4 @@ function isColliding(x, y, width, height) {
   }
 
   return false;
-}
-
-function showAlert() {
-  // Check if the device is a mobile device
-  const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  
-  if (!isMobileDevice) {
-    alert('You must click the button!😂');
-  }
-}
-
-// Check if the device is a mobile device
-const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-// Add an event listener for the "Enter" key press
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Enter' && !isMobileDevice) {
-    audio1.currentTime = 0;
-    audio1.play();
-
-    // Prevent the default form submission
-    event.preventDefault();
-
-    // Show the alert, but only on non-mobile devices
-    showAlert();
-  }
-});
-
-// Add a tap/touch event listener for mobile devices
-if (isMobileDevice) {
-  button.addEventListener('click', function () {
-    moveButton();
-  });
 }
