@@ -47,6 +47,30 @@ And -
 
 > That's it.
 
+### Quick start with CDN
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- button-will-react-->
+<button class="button_will_react">Click Me!</button>
+
+
+<!-- button-will-react CDN -->
+<script src="https://cdn.jsdelivr.net/gh/iamovi/button-will-react@cdn/dist/min/v1.0.0/move.min.js"></script>
+
+
+</body>
+</html>
+```
+
 ## Security Note
 
 This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about web development techniques.
