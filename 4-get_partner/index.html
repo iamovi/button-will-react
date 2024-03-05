@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get_partner</title>
+
+    <!-- g font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="question-container">
+      <div id="questionContainer">
+        <label for="userInput"
+          >8/ 👨‍🦰 What type of hair do you like in men?</label
+        >
+        <input type="text" id="userInput" placeholder="Enter your preference" />
+      </div>
+
+      <button id="generateButton" onclick="generateProposal()">Share!</button>
+
+      <div id="proposalResult" class="hidden">
+        <ul id="userAnswers"></ul>
+        <p>Your partner is loading...</p>
+        <p>Yes, your partner is me! Propose to me, hehe</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

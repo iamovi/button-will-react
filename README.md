@@ -26,9 +26,17 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/2-propose/
 **3. Valentine**
 
 ![3-valentine](./assets/banner/3-valentine.gif)
-- a fun way to propose your partner on 14th feb.
+- a fun way to propose your partner on valentine.
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/3-valentine/)
+
+**4. get_partner**
+
+![4-get_partner](https://iamovi.github.io/button-will-react/4-get_partner/)
+
+- enter your preference and get partner (me).
+
+Live
 
 ## button-will-react with CDN
 
