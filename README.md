@@ -32,11 +32,11 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/3-valentin
 
 **4. get_partner**
 
-![4-get_partner](https://iamovi.github.io/button-will-react/4-get_partner/)
+![4-get_partner](./assets/banner/4-get_partner.gif)
 
 - enter your preference and get partner (me).
 
-Live
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/4-get_partner/)
 
 ## button-will-react with CDN
 
