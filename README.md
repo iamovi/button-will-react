@@ -42,11 +42,11 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/4-get_part
 
 - Contributed project by [Tahsin Zidane](https://github.com/tahsinzidane)
 
-![4-get_partner](./5-love_on_hover/assets/banner.gif)
+![5-love_on_hover](./5-love_on_hover%20|%20by%20Tahsin%20Zidane/assets/banner.gif)
 
 - hover me and get love ❤️
 
-Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover/)
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover%20|%20by%20Tahsin%20Zidane/)
 
 
 ## button-will-react with CDN
