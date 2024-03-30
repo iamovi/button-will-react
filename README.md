@@ -38,6 +38,17 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/3-valentin
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/4-get_partner/)
 
+**5. love_on_hover**
+
+- Contributed project by [Tahsin Zidane](https://github.com/tahsinzidane)
+
+![4-get_partner](./5-love_on_hover/assets/banner.gif)
+
+- hover me and get love ❤️
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover/)
+
+
 ## button-will-react with CDN
 
 You can also use funny moving effect to your any custom button, Just follow few steps below -

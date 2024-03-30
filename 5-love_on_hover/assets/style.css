@@ -25,7 +25,6 @@ body{
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
-    cursor: grab;
     border: 2px solid green;
     float: left;
     position: relative;
@@ -35,6 +34,7 @@ body{
     top: 90px;
     ;
     margin: 10px 10px;
+    /* cursor: url('./anime_cry.jpg'), auto; */
 
 }
 
@@ -42,13 +42,16 @@ body{
 .devider .box {
     background-color: red;
     font-size: 50px;
-    ;
     text-align: center;
     border: 2px solid black;
-    ;
-
-
+    /* cursor:none !important;
+     */
+     
 }
+.devider:hover {
+display: none;
+}
+
 
 h1 {
     font-family: "Ubuntu", sans-serif;
@@ -141,3 +144,4 @@ button a {
 
     }
 }
+
