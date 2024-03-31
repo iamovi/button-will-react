@@ -54,7 +54,7 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_
 
 - click the button and BOOM!
 
-Live preview - [Hit here!](https://iamovi.github.io/button-will-react/6-boom-btn/)
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/6-boom_btn/)
 
 ---
 
