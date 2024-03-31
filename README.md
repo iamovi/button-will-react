@@ -48,6 +48,15 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/4-get_part
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover%20|%20by%20Tahsin%20Zidane/)
 
+**6. boom_btn**
+
+![6-boom_btn](./assets/banner/6-boom_btn.png)
+
+- click the button and BOOM!
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/6-boom-btn/)
+
+---
 
 ## button-will-react with CDN
 
