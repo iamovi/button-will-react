@@ -56,6 +56,16 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/6-boom_btn/)
 
+**7. love_on_hover_v2**
+
+- Contributed project by [Tahsin Zidane](https://github.com/tahsinzidane)
+
+![7-love_on_hover_v2](./7-love_on_hover_v2/assets/banner.gif)
+
+- hover me and get love v2 ❤️
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/7-love_on_hover_v2)
+
 ---
 
 ## button-will-react with CDN

@@ -1,0 +1,82 @@
+
+
+*{
+  margin: 0px;
+  padding: 0px;;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;;
+}
+
+.propose {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin: 10px 10px ;
+  position: relative;
+  ;
+}
+.propose img{
+  height: 250px;
+  width: 250px;
+  ;
+}
+
+.reject{
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin: 10px 10px ;
+  ;
+}
+
+.reject img{
+  height: 250px;
+  width: 250px;
+  ;
+}
+
+#secondimg{
+  visibility: hidden;
+  position: relative;
+  top: -250px;;
+  /* visibility: visible; */
+}
+
+#green{
+  position: relative;
+  bottom: 250px;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  font-size: 17px;
+  border: 1px solid rgb(68, 20, 225);
+
+}
+
+#green:hover{
+  position: relative;
+  bottom: 250px;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  font-size: 17px;
+  border-style: none;
+  background-color: rgb(68, 20, 225);
+  color: white;
+  cursor: pointer;
+}
+#red{
+  position: relative;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  font-size: 17px;
+  border-style: none;
+  border: 1px solid rgb(68, 20, 225);
+
+
+}
+
