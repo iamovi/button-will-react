@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./design.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h2>Login, LOL</h2>
+      <p class="subtitle">Catch the button to continue</p>
+    </div>
+    <div class="error" id="errorMsg"></div>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <div class="button-space"></div>
+  </div>
+  <div class="button-container">
+    <button id="loginBtn" onclick="login()">Login</button>
+  </div>
+  <div class="notification" id="notification">This will not gonna work, lol</div>
+  <script src="./move.js"></script>
+</body>
+</html>

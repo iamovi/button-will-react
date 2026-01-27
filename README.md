@@ -42,11 +42,11 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/4-get_part
 
 - Contributed project by [Tahsin Zidane](https://github.com/tahsinzidane)
 
-![5-love_on_hover](./5-love_on_hover%20|%20by%20Tahsin%20Zidane/assets/banner.gif)
+![5-love_on_hover](./5-love_on_hover/assets/banner.gif)
 
 - hover me and get love ❤️
 
-Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover%20|%20by%20Tahsin%20Zidane/)
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/5-love_on_hover/)
 
 **6. boom_btn**
 
@@ -73,6 +73,16 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/7-love_on_
 - internet meme _ starboy69 login project.
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/8-starboy69)
+
+---
+
+**9. button_lol**
+
+![8-button_lol](./9-button_lol/preview.gif)
+
+**Inspired from Project 1 but with a different approach**
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/9-button_lol)
 
 ---
 

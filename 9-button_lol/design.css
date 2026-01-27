@@ -1,0 +1,118 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .login-container {
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 0;
+      width: 400px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      border: 1px solid #000000;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #000000;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 16px;
+      margin: 10px 0;
+      border: 1px solid #000000;
+      border-radius: 0;
+      font-size: 15px;
+      transition: all 0.2s ease;
+      background: #ffffff;
+      color: #000000;
+    }
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border: 2px solid #000000;
+      padding: 15px;
+    }
+    .button-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 2;
+    }
+    button {
+      width: 110px;
+      padding: 15px 0;
+      background: #000000;
+      color: #ffffff;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      position: absolute;
+      pointer-events: auto;
+      transition: none;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    button:hover {
+      background: #333333;
+    }
+    .error {
+      color: #000000;
+      margin-bottom: 20px;
+      min-height: 20px;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .button-space {
+      height: 60px;
+    }
+    .login-header {
+      margin-bottom: 15px;
+    }
+    .subtitle {
+      color: #666666;
+      font-size: 14px;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+    input::placeholder {
+      color: #999999;
+    }
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #000000;
+      color: #ffffff;
+      padding: 16px 24px;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 500;
+      z-index: 1000;
+      opacity: 0;
+      transform: translateX(400px);
+      transition: all 0.3s ease;
+    }
+    .notification.show {
+      opacity: 1;
+      transform: translateX(0);
+    }

@@ -1,0 +1,146 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+.box {
+    height: 300px;
+    width: 300px;
+    color: #333;
+    font-size: 60px;
+    background-color: lightgreen;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 2px solid green;
+    float: left;
+    position: relative;
+    left: 10%;
+    transform: translate(-50% -50%);
+    padding: 8px;
+    top: 90px;
+    ;
+    margin: 10px 10px;
+    /* cursor: url('./anime_cry.jpg'), auto; */
+
+}
+
+
+.devider .box {
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    /* cursor:none !important;
+     */
+     
+}
+.devider:hover {
+display: none;
+}
+
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    float: left;
+    position: relative;
+    left: 35%;
+    transform: translate(-50% -50%);
+
+
+}
+
+
+
+
+
+
+
+button {
+    height: 30px;
+    width: 120px;
+    border-radius: 6px;
+    border: 0px solid;
+    position: absolute;
+    top: 450px;
+    left: 70px;
+    ;
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+
+/* ......................
+        responsive here  
+        ............................ */
+
+@media only screen and (max-width: 600px) {
+    .box {
+        height: 100px;
+        width: 100px;
+        font-size: 20px;
+        float: right;
+        position: relative;
+        right: -100px;
+
+
+    }
+
+    .devider .box {
+        font-size: 20px;
+
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .box {
+        left: -10px;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: 200;
+
+    }
+
+    .devider .box {
+        font-size: 20px;
+
+
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .box {
+        left: -100px;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: 200;
+
+    }
+
+    .devider .box {
+        font-size: 20px;
+
+
+    }
+}
