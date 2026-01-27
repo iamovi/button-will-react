@@ -96,6 +96,16 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/10-cursor_
 
 ---
 
+# Wants to add your project?
+
+If you have a cool prank or an interesting project that you'd like to share, please feel free to open an issue or submit a pull request. We'll review it and add it to the list!
+
+## Contributions
+
+Contributions to this project are welcome! If you have ideas for improvements or fun additions, please read our [Contribution.md](Contribution.md) and feel free to open an issue or submit a pull request.
+
+---
+
 ## button-will-react with CDN
 
 You can also use funny moving effect to your any custom button, Just follow few steps below -
@@ -141,10 +151,6 @@ And -
 ## Security Note
 
 This project is entirely safe and contains no malicious content. It's designed for educational and entertainment purposes only. You can explore the code and use it to learn about web development techniques.
-
-## Contributions
-
-Contributions to this project are welcome! If you have ideas for improvements or fun additions, feel free to open an issue or submit a pull request.
 
 ## License
 
