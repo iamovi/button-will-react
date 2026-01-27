@@ -95,6 +95,14 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/9-button_l
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/10-cursor_possession/)
 
 ---
+**11. soulInsta**
+<img src="./assets/banner/find-match-in -insta.png">
+**Find your match on Instagram**
+
+Live preview - [Hit here!](https://tahsinzidane.github.io/SoulInsta/) (LTS)
+
+Live preview - [Hit here !]() (V2 not available yet)
+
 
 # Wants to add your project?
 

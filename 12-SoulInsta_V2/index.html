@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulInsta ✨ Find Your Valentine</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="heart-float heart-1">💕</div>
+        <div class="heart-float heart-2">💖</div>
+        <div class="heart-float heart-3">💗</div>
+        <div class="heart-float heart-4">💘</div>
+        <div class="heart-float heart-5">❤️</div>
+        <div class="heart-float heart-6">💝</div>
+    </div>
+
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <div class="container">
+        <!-- Logo/Icon -->
+        <div class="logo-section">
+            <div class="logo-circle">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="2" y1="3" x2="22" y2="21">
+                            <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#c06bff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h1 class="main-title">
+                <span class="gradient-text">Soul</span><span class="gradient-text-alt">Insta</span>
+            </h1>
+        </div>
+
+        <p class="subtitle">Discover your perfect Instagram match ✨</p>
+        
+        <p id="error" class="error-message"></p>
+        
+        <form id="myform" class="search-form">
+            <div class="input-wrapper">
+                <span class="input-icon">@</span>
+                <input type="text" placeholder="Your Instagram username" id="name" class="search-input">
+            </div>
+            <button type="submit" class="search-button">
+                <span class="button-text">Find My Match</span>
+                <span class="button-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </button>
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner-container">
+                <div class="spinner"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loading-text">
+                <span class="typing-animation">Searching for your perfect match</span>
+                <span class="dots">
+                    <span>.</span><span>.</span><span>.</span>
+                </span>
+            </p>
+            <p class="loading-subtext">Analyzing compatibility scores 💫</p>
+        </div>
+
+        <!-- Meme Image -->
+        <div id="memeseme" class="meme-section" style="display: none;">
+            <div class="meme-card">
+                <div class="meme-message">
+                    <h3>🔥 Reality Check 🔥</h3>
+                    <p>Compatibility too high. System suspects self-love. Please touch grass.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-note">
+            <p>✨ You better generate an image with ai ✨</p>
+        </div>
+    </div>
+
+    <script src="./public/main.js"></script>
+</body>
+
+</html>
