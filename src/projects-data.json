@@ -1,0 +1,152 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "index": "01",
+      "title": "untouchable sign-in",
+      "description": "A sign-in button that refuses to be clicked. Even the Enter key won't save you.",
+      "media": {
+        "src": "./assets/banner/1-signin.gif",
+        "alt": "Moving sign-in button"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/1-signin",
+        "preview": "https://iamovi.github.io/button-will-react/1-signin/"
+      }
+    },
+    {
+      "id": 2,
+      "index": "02",
+      "title": "the proposal",
+      "description": "An inescapable choice. The 'No' button has a mind of its own. Your partner has to say yes.",
+      "media": {
+        "src": "./assets/banner/2-propose.gif",
+        "alt": "Propose prank"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/2-propose",
+        "preview": "https://iamovi.github.io/button-will-react/2-propose/"
+      }
+    },
+    {
+      "id": 3,
+      "index": "03",
+      "title": "valentine's surprise",
+      "description": "A fun and interactive way to propose your partner on Valentine's Day.",
+      "media": {
+        "src": "./assets/banner/3-valentine.gif",
+        "alt": "Valentine prank"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/3-valentine",
+        "preview": "https://iamovi.github.io/button-will-react/3-valentine/"
+      }
+    },
+    {
+      "id": 4,
+      "index": "04",
+      "title": "partner finder",
+      "description": "Enter your preferences and find your perfect partner (Spoiler: It's probably me).",
+      "media": {
+        "src": "./assets/banner/4-get_partner.gif",
+        "alt": "Get partner prank"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/4-get_partner",
+        "preview": "https://iamovi.github.io/button-will-react/4-get_partner/"
+      }
+    },
+    {
+      "id": 5,
+      "index": "05",
+      "title": "love on hover",
+      "description": "Hover over the button and get showered with love.",
+      "contributor": {
+        "name": "Tahsin Zidane",
+        "url": "https://tahsinzidane.github.io/"
+      },
+      "media": {
+        "src": "./5-love_on_hover/assets/banner.gif",
+        "alt": "Love on hover"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/5-love_on_hover",
+        "preview": "https://iamovi.github.io/button-will-react/5-love_on_hover/"
+      }
+    },
+    {
+      "id": 6,
+      "index": "06",
+      "title": "the boom button",
+      "description": "Don't click it. Seriously. Just don't. You've been warned.",
+      "media": {
+        "src": "./assets/banner/6-boom_btn.png",
+        "alt": "Boom button"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/6-boom_btn",
+        "preview": "https://iamovi.github.io/button-will-react/6-boom_btn/"
+      }
+    },
+    {
+      "id": 7,
+      "index": "07",
+      "title": "love on hover v2",
+      "description": "An improved version of love showering.",
+      "contributor": {
+        "name": "Tahsin Zidane",
+        "url": "https://tahsinzidane.github.io/"
+      },
+      "media": {
+        "src": "./7-love_on_hover_v2/assets/banner.gif",
+        "alt": "Love on hover v2"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/7-love_on_hover_v2",
+        "preview": "https://iamovi.github.io/button-will-react/7-love_on_hover_v2"
+      }
+    },
+    {
+      "id": 8,
+      "index": "08",
+      "title": "starboy69 login",
+      "description": "Based on the internet meme, a login project that captures the starboy energy.",
+      "media": {
+        "src": "./assets/banner/8-starboy69.gif",
+        "alt": "Starboy69 login"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/8-starboy69",
+        "preview": "https://iamovi.github.io/button-will-react/8-starboy69"
+      }
+    },
+    {
+      "id": 9,
+      "index": "09",
+      "title": "button lol",
+      "description": "Inspired by project 1 but with a completely different logic. Catch it if you can.",
+      "media": {
+        "src": "./9-button_lol/preview.gif",
+        "alt": "Button lol"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/9-button_lol",
+        "preview": "https://iamovi.github.io/button-will-react/9-button_lol"
+      }
+    },
+    {
+      "id": 10,
+      "index": "10",
+      "title": "cursor possession",
+      "description": "Your cursor is afraid of the button. It tries to escape its gravitational pull.",
+      "media": {
+        "src": "./10-cursor_possession/preview.gif",
+        "alt": "Cursor possession"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/10-cursor_possession",
+        "preview": "https://iamovi.github.io/button-will-react/10-cursor_possession/"
+      }
+    }
+  ]
+}
