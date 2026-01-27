@@ -102,7 +102,7 @@ If you have a cool prank or an interesting project that you'd like to share, ple
 
 ## Contributions
 
-Contributions to this project are welcome! If you have ideas for improvements or fun additions, please read our [Contribution.md](Contribution.md) and feel free to open an issue or submit a pull request.
+Contributions to this project are welcome! If you have ideas for improvements or fun additions, please read our [CONTRIBUTING.md](CONTRIBUTING.md) and feel free to open an issue or submit a pull request.
 
 ---
 
