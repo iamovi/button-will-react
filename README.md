@@ -78,11 +78,21 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/8-starboy6
 
 **9. button_lol**
 
-![8-button_lol](./9-button_lol/preview.gif)
+![9-button_lol](./9-button_lol/preview.gif)
 
 **Inspired from Project 1 but with a different approach**
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/9-button_lol)
+
+---
+
+**10. cursor_possession**
+
+![Preview](./10-cursor_possession/preview.gif)
+
+**Your cursor afraid of button.**
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/10-cursor_possession/)
 
 ---
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Possession</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1 class="title">Cursor Possession 👻</h1>
+    <p class="subtitle">I don't move. I make YOU move.</p>
+
+    <div class="login-container">
+        <form class="login-form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" placeholder="admin@system.override" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" placeholder="••••••••" autocomplete="off">
+            </div>
+            <div class="button-container">
+                <button type="submit" id="target-button">LOGIN</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="real-cursor"></div>
+
+    <div class="instructions hud-panel">
+        <div><strong>Phase 1: Possession</strong></div>
+        <div>• Square = your cursor</div>
+        <div>• Dot = your intent</div>
+        <div class="hint">Only the square can interact.</div>
+    </div>
+
+    <div class="distance-meter hud-panel">
+        <div>Distance <span><span id="distance">0</span>px</span></div>
+        <div>Offset <span><span id="offset">0</span>px</span></div>
+        <div class="possession-level">
+            <div>Possession</div>
+            <div class="bar">
+                <div class="bar-fill" id="possession-bar"></div>
+            </div>
+            <div id="possession-event-msg"></div>
+        </div>
+    </div>
+
+    <div class="attempts">
+        Attempts: <span id="attempt-count">0</span>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
