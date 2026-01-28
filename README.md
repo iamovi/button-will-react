@@ -107,6 +107,7 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/11-SoulIns
 Check out main repo of SoulInsta - [Here](https://github.com/tahsinzidane/SoulInsta)
 
 ***12. soulInsta V2 (Side project of main soulInsta)***
+<img src="./assets/banner/12-soulinstaV2.gif">
 
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/12-SoulInsta_V2)
 
