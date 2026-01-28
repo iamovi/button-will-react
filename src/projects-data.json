@@ -183,6 +183,20 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/12-SoulInsta_V2/",
         "preview": "https://iamovi.github.io/button-will-react/12-SoulInsta_V2/"
       }
+    },
+        {
+      "id": 13,
+      "index": "13",
+      "title": "rickroll",
+      "description": "Feeling down? Click to get happiness but get rickrolled lol, (Send this to your homie).",
+      "media": {
+        "src": "./13-rickroll/preview.gif",
+        "alt": "Rickroll"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/13-rickroll",
+        "preview": "https://iamovi.github.io/button-will-react/13-rickroll/"
+      }
     }
   ]
 }

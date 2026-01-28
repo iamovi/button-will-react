@@ -112,6 +112,15 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/12-SoulIns
 
 ---
 
+**13. rickroll**
+
+![rickroll Preview](./13-rickroll/preview.gif)
+
+**Feeling down? Click to get happiness but get rickrolled lol, (Send this to your homie).**
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/13-rickroll/)
+
+---
 
 # Wants to add your project?
 

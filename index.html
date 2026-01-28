@@ -26,6 +26,11 @@
       <div class="nav-logo">
         <a href="#">button-will-react</a>
       </div>
+      <div class="nav-search">
+        <i class="bi bi-search"></i>
+        <input type="text" id="project-search" placeholder="Search pranks... or contributor"
+          aria-label="Search projects">
+      </div>
       <div class="nav-actions">
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
           <i class="bi bi-moon-stars"></i>
@@ -39,19 +44,36 @@
       <h1>button-will-react</h1>
       <p>A collection of interactive elements and lighthearted pranks that showcase the playfulness of the web. Move
         your cursor and see what happens.</p>
-      <h4>Made by Ovi ren & Contributors</h4>
+      <h4>Created by Ovi ren & Contributors</h4>
       <div id="gh-stats" class="gh-stats">
+        <a href="https://github.com/iamovi/button-will-react" target="_blank" class="stat-item repo-link">
+          <i class="bi bi-github"></i> repo
+        </a>
         <div class="stat-item">
           <i class="bi bi-star"></i> <span id="star-count">...</span> stars
         </div>
         <div class="stat-item">
           <i class="bi bi-git"></i> <span id="fork-count">...</span> forks
         </div>
+        <div class="stat-item">
+          <i class="bi bi-people"></i> <span id="contributor-count">...</span> contributors
+        </div>
       </div>
     </header>
 
     <!-- display all project inside project-grid div  -->
     <div id="project-grid" class="project-grid"></div>
+
+    <div class="maintenance-notice">
+      <p>This project is actively maintained, new projects will be added regular, look for new project in project GitHub
+        repository!</p>
+    </div>
+
+    <div class="contribute-notice">
+      <p>If you want to contribute your project visit <a
+          href="https://github.com/iamovi/button-will-react?tab=contributing-ov-file#contributing-to-button-will-react"
+          target="_blank">CONTRIBUTING.md</a></p>
+    </div>
 
     <section class="cdn-section">
       <h2>Quick Start with CDN</h2>

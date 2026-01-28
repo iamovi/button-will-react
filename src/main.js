@@ -41,17 +41,18 @@ themeToggle.addEventListener('click', () => {
 })
 
 // fetch and display projects card
-fetch('./src/projects-data.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('project-grid')
-    const fragment = document.createDocumentFragment()
+let allProjects = [];
 
-    data.projects.forEach(project => {
-      const card = document.createElement('div')
-      card.className = 'project-card'
+function renderProjects(projects) {
+  const container = document.getElementById('project-grid')
+  container.innerHTML = ''; // Clear previous projects
+  const fragment = document.createDocumentFragment()
 
-      card.innerHTML = `
+  projects.forEach(project => {
+    const card = document.createElement('div')
+    card.className = 'project-card'
+
+    card.innerHTML = `
         <div class="card-media">
           <img src="${project.media.src}" alt="${project.media.alt}">
         </div>
@@ -59,6 +60,12 @@ fetch('./src/projects-data.json')
         <div class="card-content">
           <h3>${project.index}. ${project.title}</h3>
           <p>${project.description}</p>
+          
+          <div class="contributed-by">
+            ${project.contributor ?
+        `Contributed by: <a href="${project.contributor.url}" target="_blank">${project.contributor.name}</a>` :
+        `Created by: <a href="https://iamovi.github.io/" target="_blank">Ovi ren</a>`}
+          </div>
 
           <div class="card-links">
             <a href="${project.links.code}" target="_blank">
@@ -70,13 +77,18 @@ fetch('./src/projects-data.json')
           </div>
         </div>
       `
-      fragment.appendChild(card)
-    })
+    fragment.appendChild(card)
+  })
 
-    container.appendChild(fragment)
+  container.appendChild(fragment)
+  container.style.minHeight = 'auto';
+}
 
-    // Clear min-height after content is loaded
-    container.style.minHeight = 'auto';
+fetch('./src/projects-data.json')
+  .then(res => res.json())
+  .then(data => {
+    allProjects = data.projects;
+    renderProjects(allProjects);
 
     // Restore scroll position after projects are loaded
     const savedScrollPos = sessionStorage.getItem('scrollPos');
@@ -87,14 +99,68 @@ fetch('./src/projects-data.json')
   })
   .catch(err => console.error(err))
 
-// fetch github stats
-fetch('https://api.github.com/repos/iamovi/button-will-react')
-  .then(res => res.json())
-  .then(repoData => {
-    document.getElementById('star-count').innerText = repoData.stargazers_count
-    document.getElementById('fork-count').innerText = repoData.forks_count
-  })
-  .catch(err => {
-    console.error('Error fetching GitHub stats:', err)
-    document.getElementById('gh-stats').style.display = 'none'
-  })
+// Search functionality
+const searchInput = document.getElementById('project-search');
+searchInput.addEventListener('input', (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  const filteredProjects = allProjects.filter(project => {
+    const titleMatch = project.title.toLowerCase().includes(searchTerm);
+    const descMatch = project.description.toLowerCase().includes(searchTerm);
+    const contributorName = project.contributor ? project.contributor.name : "Ovi ren";
+    const contributorMatch = contributorName.toLowerCase().includes(searchTerm);
+
+    return titleMatch || descMatch || contributorMatch;
+  });
+  renderProjects(filteredProjects);
+});
+
+// fetch github stats with caching to avoid rate limits
+// Strategy: Show cached data immediately, then background refresh if cache is older than 5 minutes
+const CACHE_KEY = 'gh_stats_cache';
+const REVALIDATE_AFTER = 5 * 60 * 1000; // 5 minutes
+
+function updateStatsUI(stars, forks, contributors) {
+  if (stars !== undefined) document.getElementById('star-count').innerText = stars;
+  if (forks !== undefined) document.getElementById('fork-count').innerText = forks;
+  if (contributors !== undefined) document.getElementById('contributor-count').innerText = contributors;
+}
+
+function fetchGitHubStats() {
+  const repoUrl = 'https://api.github.com/repos/iamovi/button-will-react'
+  return Promise.all([
+    fetch(repoUrl).then(res => res.json()),
+    fetch(`${repoUrl}/contributors`).then(res => res.json())
+  ])
+    .then(([repoData, contributorsData]) => {
+      const stats = {
+        stars: repoData.stargazers_count,
+        forks: repoData.forks_count,
+        contributors: contributorsData.length,
+        timestamp: Date.now()
+      };
+      localStorage.setItem(CACHE_KEY, JSON.stringify(stats));
+      updateStatsUI(stats.stars, stats.forks, stats.contributors);
+      return stats;
+    })
+    .catch(err => {
+      console.error('Error fetching GitHub stats:', err);
+    });
+}
+
+const cachedStats = JSON.parse(localStorage.getItem(CACHE_KEY));
+const now = Date.now();
+
+if (cachedStats) {
+  // Show cached data immediately
+  updateStatsUI(cachedStats.stars, cachedStats.forks, cachedStats.contributors);
+
+  // If data is older than 5 mins, refresh in background
+  if (now - cachedStats.timestamp > REVALIDATE_AFTER) {
+    fetchGitHubStats();
+  }
+} else {
+  // No cache at all, full fetch
+  fetchGitHubStats().catch(() => {
+    document.getElementById('gh-stats').style.display = 'none';
+  });
+}

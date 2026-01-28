@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Init Happiness</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Outfit:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="emoji-bg" id="emojiBg"></div>
+    <div class="wrapper">
+      <main class="container">
+        <header>
+          <h1>Feeling<br />Down?</h1>
+          <p class="subtitle">
+            A sophisticated emotional optimization protocol designed for the
+            modern individual.
+          </p>
+        </header>
+
+        <div class="content-right">
+          <div class="questions-stack">
+            <div class="question">Life kicking your ass lately?</div>
+            <div class="question">Tired of pretending everything's fine?</div>
+            <div class="question">Scrolling endlessly for meaning?</div>
+            <div class="question">Need a paradigm shift?</div>
+          </div>
+
+          <div class="action-zone">
+            <div class="input-group">
+              <div class="field-wrapper">
+                <label for="userName">Subject Identity</label>
+                <input
+                  type="text"
+                  id="userName"
+                  placeholder="Enter Full Name"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <button class="btn-premium" id="happinessBtn">
+              Initialize Happiness
+            </button>
+            <div id="status"></div>
+            <div id="videoHost" class="video-container"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer-metrics">
+        <div class="metric">
+          <span class="metric-label">Integrity</span>
+          <span class="metric-value">100% Verified</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Efficiency</span>
+          <span class="metric-value">Real-time Joy</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Risk</span>
+          <span class="metric-value">Non-Hazardous*</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Skeptics</span>
+          <span class="metric-value">Doctors Baffled</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
