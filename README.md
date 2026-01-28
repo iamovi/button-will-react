@@ -95,13 +95,22 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/9-button_l
 Live preview - [Hit here!](https://iamovi.github.io/button-will-react/10-cursor_possession/)
 
 ---
+
 **11. soulInsta**
-<img src="./assets/banner/find-match-in -insta.png">
+
+<img src="./assets/banner/11-SoulInsta.png">
+
 **Find your match on Instagram**
 
-Live preview - [Hit here!](https://tahsinzidane.github.io/SoulInsta/) (LTS)
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/11-SoulInsta) (LTS)
 
-Live preview - [Hit here !]() (V2 not available yet)
+Check out main repo of SoulInsta - [Here](https://github.com/tahsinzidane/SoulInsta)
+
+***12. soulInsta V2 (Side project of main soulInsta)***
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/12-SoulInsta_V2)
+
+---
 
 
 # Wants to add your project?
