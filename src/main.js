@@ -114,20 +114,14 @@ searchInput.addEventListener('input', (e) => {
   renderProjects(filteredProjects);
 });
 
-// fetch github stats with caching to avoid rate limits
-// Strategy: Show cached data immediately, then background refresh if cache is older than 5 minutes
-const CACHE_KEY = 'gh_stats_cache';
-const REVALIDATE_AFTER = 5 * 60 * 1000; // 5 minutes
+// fetch github stats with 5-minute localStorage caching
+const GH_STATS_CACHE_KEY = 'gh_stats_cache';
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
 
-function updateStatsUI(stars, forks, contributors) {
-  if (stars !== undefined) document.getElementById('star-count').innerText = stars;
-  if (forks !== undefined) document.getElementById('fork-count').innerText = forks;
-  if (contributors !== undefined) document.getElementById('contributor-count').innerText = contributors;
-}
-
-function fetchGitHubStats() {
+function fetchAndCacheGitHubStats() {
   const repoUrl = 'https://api.github.com/repos/iamovi/button-will-react'
-  return Promise.all([
+
+  Promise.all([
     fetch(repoUrl).then(res => res.json()),
     fetch(`${repoUrl}/contributors`).then(res => res.json())
   ])
@@ -138,29 +132,43 @@ function fetchGitHubStats() {
         contributors: contributorsData.length,
         timestamp: Date.now()
       };
-      localStorage.setItem(CACHE_KEY, JSON.stringify(stats));
-      updateStatsUI(stats.stars, stats.forks, stats.contributors);
-      return stats;
+
+      // Save to localStorage
+      localStorage.setItem(GH_STATS_CACHE_KEY, JSON.stringify(stats));
+
+      // Update UI
+      document.getElementById('star-count').innerText = stats.stars;
+      document.getElementById('fork-count').innerText = stats.forks;
+      document.getElementById('contributor-count').innerText = stats.contributors;
     })
     .catch(err => {
       console.error('Error fetching GitHub stats:', err);
+      document.getElementById('gh-stats').style.display = 'none';
     });
 }
 
-const cachedStats = JSON.parse(localStorage.getItem(CACHE_KEY));
-const now = Date.now();
+// Check if we have cached stats
+const cachedGitHubStats = localStorage.getItem(GH_STATS_CACHE_KEY);
 
-if (cachedStats) {
-  // Show cached data immediately
-  updateStatsUI(cachedStats.stars, cachedStats.forks, cachedStats.contributors);
+if (cachedGitHubStats) {
+  try {
+    const parsed = JSON.parse(cachedGitHubStats);
+    const age = Date.now() - parsed.timestamp;
 
-  // If data is older than 5 mins, refresh in background
-  if (now - cachedStats.timestamp > REVALIDATE_AFTER) {
-    fetchGitHubStats();
+    if (age < CACHE_DURATION) {
+      // Cache is still valid, use it
+      document.getElementById('star-count').innerText = parsed.stars;
+      document.getElementById('fork-count').innerText = parsed.forks;
+      document.getElementById('contributor-count').innerText = parsed.contributors;
+    } else {
+      // Cache expired, fetch fresh data
+      fetchAndCacheGitHubStats();
+    }
+  } catch (e) {
+    // Invalid cache data, fetch fresh
+    fetchAndCacheGitHubStats();
   }
 } else {
-  // No cache at all, full fetch
-  fetchGitHubStats().catch(() => {
-    document.getElementById('gh-stats').style.display = 'none';
-  });
+  // No cache, fetch fresh data
+  fetchAndCacheGitHubStats();
 }
