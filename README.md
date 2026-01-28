@@ -96,6 +96,23 @@ Live preview - [Hit here!](https://iamovi.github.io/button-will-react/10-cursor_
 
 ---
 
+**11. soulInsta**
+
+<img src="./assets/banner/11-SoulInsta.png">
+
+**Find your match on Instagram**
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/11-SoulInsta) (LTS)
+
+Check out main repo of SoulInsta - [Here](https://github.com/tahsinzidane/SoulInsta)
+
+***12. soulInsta V2 (Side project of main soulInsta)***
+
+Live preview - [Hit here!](https://iamovi.github.io/button-will-react/12-SoulInsta_V2)
+
+---
+
+
 # Wants to add your project?
 
 If you have a cool prank or an interesting project that you'd like to share, please feel free to open an issue or submit a pull request. We'll review it and add it to the list!

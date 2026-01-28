@@ -147,6 +147,42 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/10-cursor_possession",
         "preview": "https://iamovi.github.io/button-will-react/10-cursor_possession/"
       }
+    },
+    {
+      "id": 11,
+      "index": "11",
+      "title": "SoulInsta",
+      "description": "Find your match on Instagram",
+      "contributor": {
+        "name": "Tahsin Zidane",
+        "url": "https://tahsinzidane.github.io/"
+      },
+      "media": {
+        "src": "./assets/banner/11-SoulInsta.png",
+        "alt": "SoulInsta"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/11-SoulInsta/",
+        "preview": "https://iamovi.github.io/button-will-react/11-SoulInsta/"
+      }
+    },
+        {
+      "id": 12,
+      "index": "12",
+      "title": "SoulInsta V2",
+      "description": "Find your match on Instagram V2",
+      "contributor": {
+        "name": "Tahsin Zidane",
+        "url": "https://tahsinzidane.github.io/"
+      },
+      "media": {
+        "src": "./assets/placeholder.png",
+        "alt": "SoulInsta V2"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/12-SoulInsta_V2/",
+        "preview": "https://iamovi.github.io/button-will-react/12-SoulInsta_V2/"
+      }
     }
   ]
 }

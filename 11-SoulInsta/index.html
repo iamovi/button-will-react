@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulInsta</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Find your valentine on Instagram</h1>
+        <p id="error"></p>
+        <form action="" id="myform">
+            <input type="text" placeholder="Type your Insta username" id="name">
+            <input type="submit" value="Search">
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>
+                Searching best partner for you...
+            </p>
+        </div>
+
+        <!-- Meme Image -->
+        <img src="./public/memeseme.gif" id="memeseme" alt="Meme" style="display: none;">
+    </div>
+    <script src="./public/main.js"></script>
+</body>
+
+</html>
