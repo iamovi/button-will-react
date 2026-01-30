@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Button - Don't Scare Me!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">The <span class="nervous">Anxiety</span> Button</h1>
+        <p class="subtitle">Approach with caution... it's having a rough day.</p>
+
+        <div class="button-zone">
+            <button id="anxiousBtn" class="anxious-button">
+                <span class="button-text">Click Me?</span>
+                <span class="thought-bubble"></span>
+            </button>
+
+            <div id="panicMessage" class="panic-message"></div>
+        </div>
+
+        <div class="instructions">
+            <p>💡 Try to hover over the button...</p>
+        </div>
+    </div>
+
+    <div id="bsod" class="bsod">
+        <div class="sad-face">:(</div>
+        <h2>Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll
+            restart for you.</h2>
+        <div class="qr-code-zone">
+            <div class="qr-placeholder">
+                <img src="qr_code.png" alt="QR Code">
+            </div>
+            <div class="info-text">
+                For more information about this issue and possible fixes, visit https://www.windows.com/stopcode
+                <br><br>
+                If you call a support person, give them this info:
+                <br>
+                Stop code: CRITICAL_PROCESS_DIED
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

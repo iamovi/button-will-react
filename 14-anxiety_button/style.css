@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --nervous-yellow: #FFE66D;
+    --panic-red: #FF6B6B;
+    --anxious-blue: #4ECDC4;
+    --calm-green: #95E1D3;
+    --dark-text: #2C3E50;
+    --light-bg: #F8F9FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #E8EEF2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.5s ease;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 rgba(255, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+    z-index: 999;
+}
+
+body.level-very-nervous::after {
+    box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.1);
+}
+
+body.level-panicking::after {
+    box-shadow: inset 0 0 200px rgba(255, 0, 0, 0.3);
+    animation: screenShake 0.1s infinite;
+}
+
+@keyframes screenShake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    75% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(-2px, 2px);
+    }
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.02) 2px, rgba(0, 0, 0, 0.02) 4px);
+    pointer-events: none;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.title {
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    color: var(--dark-text);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.nervous {
+    color: var(--panic-red);
+    display: inline-block;
+    animation: nervousShake 0.3s infinite;
+}
+
+@keyframes nervousShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translateX(2px) rotate(1deg);
+    }
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.button-zone {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anxious-button {
+    position: absolute;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    background: linear-gradient(to bottom, var(--nervous-yellow) 0%, #f7d74d 100%);
+    border: 3px solid var(--dark-text);
+    border-bottom: 8px solid var(--dark-text);
+    border-radius: 4px;
+    color: var(--dark-text);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow:
+        0 6px 0 rgba(0, 0, 0, 0.1);
+    transform-origin: center;
+    z-index: 100;
+}
+
+.anxious-button:active {
+    border-bottom-width: 3px;
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-text {
+    display: block;
+    color: var(--dark-text);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Calm state - default */
+.anxious-button.calm {
+    animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* Slightly nervous - cursor getting closer */
+.anxious-button.slightly-nervous {
+    animation: slightShake 0.5s infinite;
+    background: linear-gradient(to bottom, #FFF89A 0%, var(--nervous-yellow) 100%);
+    border-bottom-width: 8px;
+}
+
+@keyframes slightShake {
+
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-1px) rotate(-0.5deg);
+    }
+
+    50% {
+        transform: translateX(1px) rotate(0.5deg);
+    }
+
+    75% {
+        transform: translateX(-1px) rotate(-0.5deg);
+    }
+}
+
+/* Nervous - cursor closer */
+.anxious-button.nervous {
+    animation: mediumShake 0.3s infinite;
+    background: linear-gradient(to bottom, var(--anxious-blue) 0%, #3db7af 100%);
+    border-bottom-width: 10px;
+    transform: scale(0.98);
+}
+
+@keyframes mediumShake {
+
+    0%,
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(0.98);
+    }
+
+    20% {
+        transform: translateX(-3px) translateY(2px) rotate(-1deg) scale(0.98);
+    }
+
+    40% {
+        transform: translateX(3px) translateY(-2px) rotate(1deg) scale(0.98);
+    }
+
+    60% {
+        transform: translateX(-2px) translateY(3px) rotate(-1deg) scale(0.98);
+    }
+
+    80% {
+        transform: translateX(2px) translateY(-3px) rotate(1deg) scale(0.98);
+    }
+}
+
+/* Very nervous - cursor very close */
+.anxious-button.very-nervous {
+    animation: heavyShake 0.15s infinite;
+    background: linear-gradient(to bottom, var(--panic-red) 0%, #e65b5b 100%);
+    border-color: #D63031;
+    border-bottom-width: 12px;
+    transform: scale(0.95);
+}
+
+@keyframes heavyShake {
+
+    0%,
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(0.95);
+    }
+
+    10% {
+        transform: translateX(-5px) translateY(3px) rotate(-2deg) scale(0.95);
+    }
+
+    20% {
+        transform: translateX(5px) translateY(-3px) rotate(2deg) scale(0.95);
+    }
+
+    30% {
+        transform: translateX(-4px) translateY(4px) rotate(-2deg) scale(0.95);
+    }
+
+    40% {
+        transform: translateX(4px) translateY(-4px) rotate(2deg) scale(0.95);
+    }
+
+    50% {
+        transform: translateX(-5px) translateY(3px) rotate(-2deg) scale(0.95);
+    }
+
+    60% {
+        transform: translateX(5px) translateY(-3px) rotate(2deg) scale(0.95);
+    }
+
+    70% {
+        transform: translateX(-4px) translateY(4px) rotate(-2deg) scale(0.95);
+    }
+
+    80% {
+        transform: translateX(4px) translateY(-4px) rotate(2deg) scale(0.95);
+    }
+
+    90% {
+        transform: translateX(-3px) translateY(2px) rotate(-1deg) scale(0.95);
+    }
+}
+
+/* Panicking - cursor extremely close */
+.anxious-button.panicking {
+    animation: panicShake 0.1s infinite, pulse 0.5s infinite;
+    background: linear-gradient(to bottom, var(--panic-red) 0%, #e65b5b 100%);
+    border-color: #D63031;
+    border-bottom-width: 14px;
+    transform: scale(0.9);
+    box-shadow:
+        0 0 20px rgba(255, 107, 107, 0.4),
+        0 10px 0 #D63031;
+}
+
+@keyframes panicShake {
+
+    0%,
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(0.9);
+    }
+
+    10% {
+        transform: translateX(-8px) translateY(6px) rotate(-3deg) scale(0.9);
+    }
+
+    20% {
+        transform: translateX(8px) translateY(-6px) rotate(3deg) scale(0.9);
+    }
+
+    30% {
+        transform: translateX(-7px) translateY(7px) rotate(-3deg) scale(0.9);
+    }
+
+    40% {
+        transform: translateX(7px) translateY(-7px) rotate(3deg) scale(0.9);
+    }
+
+    50% {
+        transform: translateX(-8px) translateY(6px) rotate(-3deg) scale(0.9);
+    }
+
+    60% {
+        transform: translateX(8px) translateY(-6px) rotate(3deg) scale(0.9);
+    }
+
+    70% {
+        transform: translateX(-7px) translateY(7px) rotate(-3deg) scale(0.9);
+    }
+
+    80% {
+        transform: translateX(7px) translateY(-7px) rotate(3deg) scale(0.9);
+    }
+
+    90% {
+        transform: translateX(-6px) translateY(5px) rotate(-2deg) scale(0.9);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(255, 107, 107, 0.6), 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(255, 107, 107, 0.8), 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Running away state */
+.anxious-button.running {
+    transition: all 0.2s ease-out;
+    animation: fastShake 0.2s infinite;
+}
+
+@keyframes fastShake {
+
+    0%,
+    100% {
+        transform: translateX(0) scale(0.9);
+    }
+
+    25% {
+        transform: translateX(-10px) rotate(-5deg) scale(0.9);
+    }
+
+    75% {
+        transform: translateX(10px) rotate(5deg) scale(0.9);
+    }
+}
+
+/* Success state */
+.anxious-button.clicked {
+    animation: celebrate 0.6s ease-out;
+    background: var(--calm-green);
+    border-color: #2ECC71;
+    transform: scale(1.2);
+}
+
+@keyframes celebrate {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.3) rotate(10deg);
+    }
+
+    100% {
+        transform: scale(1.2) rotate(0deg);
+    }
+}
+
+.panic-message {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-left: 5px solid var(--panic-red);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.panic-message::before {
+    content: '⚠️';
+    font-size: 1.2rem;
+}
+
+.panic-message.show {
+    animation: slideDown 0.2s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* BSOD Prank Overlay */
+.bsod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0078d7;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10%;
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.bsod.active {
+    display: flex;
+}
+
+.bsod .sad-face {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+.bsod h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    max-width: 800px;
+}
+
+.bsod .qr-code-zone {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bsod .qr-placeholder {
+    width: 151px;
+    height: 151px;
+    background: white;
+    padding: 10px;
+}
+
+.bsod .qr-placeholder img {
+    width: 100%;
+}
+
+.bsod .info-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.bsod .error-code {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.instructions {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeIn 1s ease-in 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Confetti for success */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: var(--nervous-yellow);
+    position: absolute;
+    animation: confettiFall 3s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(600px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .anxious-button {
+        padding: 0.7rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .button-zone {
+        height: 300px;
+    }
+}

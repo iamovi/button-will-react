@@ -197,6 +197,20 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/13-rickroll",
         "preview": "https://iamovi.github.io/button-will-react/13-rickroll/"
       }
+    },
+        {
+      "id": 14,
+      "index": "14",
+      "title": "Anxiety Button",
+      "description": "Currently Under Development....",
+      "media": {
+        "src": "./assets/placeholder.png",
+        "alt": "Anxiety Button"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/14-anxiety_button",
+        "preview": "https://iamovi.github.io/button-will-react/14-anxiety_button/"
+      }
     }
   ]
 }
