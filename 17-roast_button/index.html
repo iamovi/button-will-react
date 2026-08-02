@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Roast button</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+    <img src="./assets/bg.gif" id="bg-gif" alt="Background">
+    <header class="game-header" id="header">
+
+        <h1>Lets start
+        </h1>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Attempts</h3>
+                <p id="attempts">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Escapes</h3>
+                <p id="escapes">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Time</h3>
+                <p id="timer">00:00</p>
+            </div>
+
+
+        </div>
+
+        <div class="roast-box">
+
+            <p id="roast">
+                Catch me... if you can 😏
+            </p>
+
+        </div>
+
+    </header>
+
+    <button id="catch-btn">
+
+        Catch Me
+
+    </button>
+    <div id="victory" class="modal hidden">
+        <div class="victory-content">
+            <img id="victory-gif"  src="./assets/result.gif" alt="roast reaction">
+            <p id="final-message" class="victory-roast"></p>
+        </div>
+        <div class="final-stats">
+            <p id="final-attempts"></p>
+            <p id="final-escapes"></p>
+            <p id="final-time"></p>
+        </div>
+        <button id="restart">
+            Wanna Try again..
+        </button>
+    </div>
+    <script src="roasts.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
