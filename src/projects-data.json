@@ -243,6 +243,24 @@
         "code": "https://github.com/iamovi/button-will-react/tree/main/16-valentines_prank/",
         "preview": "https://iamovi.github.io/button-will-react/16-valentines_prank/"
       }
+    },
+        {
+      "id": 17,
+      "index": "17",
+      "title": "Roast button",
+      "description": "Roast button.",
+      "contributor": {
+        "name": "Fish",
+        "country": "Unknown"
+      },
+      "media": {
+        "src": "./assets/banner/17-roast_button.gif",
+        "alt": "roast button"
+      },
+      "links": {
+        "code": "https://github.com/iamovi/button-will-react/tree/main/17-roast_button/",
+        "preview": "https://iamovi.github.io/button-will-react/17-roast_button/"
+      }
     }
   ]
 }
